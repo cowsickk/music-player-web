@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Music Player</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="main-wrapper">
+        <div class="sidebar">
+            <h2 class="logo">MusicBox</h2>
+            <div class="playlist-header">Your Library</div>
+            <ul id="song-list"></ul>
+                </ul>
+        </div>
+
+        <div class="player-area">
+            <div class="card">
+                <div class="img-container">
+                    <img src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?w=500" alt="Album Art" id="cover">
+                </div>
+                
+                <div class="song-details">
+                    <h1 id="title">Song Title</h1>
+                    <p id="artist">Artist Name</p>
+                </div>
+
+                <audio id="audio"></audio>
+
+                <div class="progress-section">
+                    <div class="progress-container" id="progress-container">
+                        <div class="progress" id="progress"></div>
+                    </div>
+                    <div class="time-info">
+                        <span id="current-time">0:00</span>
+                        <span id="duration">0:00</span>
+                    </div>
+                </div>
+
+                <div class="controls">
+                    <button id="prev" class="ctrl-btn">Prev</button>
+                    <button id="play" class="play-btn">Play</button>
+                    <button id="next" class="ctrl-btn">Next</button>
+                </div>
+
+                <div class="volume-section">
+                    <span class="vol-icon">Vol</span>
+                    <input type="range" id="volume" min="0" max="1" step="0.1" value="0.7">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
